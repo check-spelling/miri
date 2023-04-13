@@ -24,7 +24,7 @@
 //! However, this model lacks SC accesses and is therefore unusable by Miri (SC accesses are everywhere in library code).
 //!
 //! If you find anything that proposes a relaxed memory model that is C++20-consistent, supports all orderings Rust's atomic accesses
-//! and fences accept, and is implementable (with operational semanitcs), please open a GitHub issue!
+//! and fences accept, and is implementable (with operational semantics), please open a GitHub issue!
 //!
 //! One characteristic of this implementation, in contrast to some other notable operational models such as ones proposed in
 //! Taming Release-Acquire Consistency by Ori Lahav et al. (<https://plv.mpi-sws.org/sra/paper.pdf>) or Promising Semantics noted above,
