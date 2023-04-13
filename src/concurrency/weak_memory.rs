@@ -193,7 +193,7 @@ impl StoreBufferAlloc {
                     buffers.remove_pos_range(pos_range);
                 }
                 AccessType::Empty(_) => {
-                    // The range had no weak behaivours attached, do nothing
+                    // The range had no weak behaviours attached, do nothing
                 }
             }
         }
