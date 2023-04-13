@@ -90,7 +90,7 @@ fn mut_raw_mut() {
         assert_eq!(unsafe { *xraw }, 4);
         assert_eq!(*xref1, 4);
         assert_eq!(unsafe { *xraw }, 4);
-        // we cannot use xref2; see `compile-fail/stacked-borows/illegal_read4.rs`
+        // we cannot use xref2; see `compile-fail/stacked-borrows/illegal_read4.rs`
     }
     assert_eq!(x, 4);
 }
