@@ -180,7 +180,7 @@ pub trait EvalContextExt<'mir, 'tcx: 'mir>: crate::MiriInterpCxExt<'mir, 'tcx> {
                 }
             }
 
-            // Miscelanneous
+            // Miscellaneous
             "getrandom" => {
                 let [ptr, len, flags] =
                     this.check_shim(abi, Abi::C { unwind: false }, link_name, args)?;
