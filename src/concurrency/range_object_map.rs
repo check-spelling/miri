@@ -115,7 +115,7 @@ impl<T> RangeObjectMap<T> {
     // want to repeat the binary search on each time, so we ask the caller to supply Position
     pub fn insert_at_pos(&mut self, pos: Position, range: AllocRange, data: T) {
         self.v.insert(pos, Elem { range, data });
-        // If we aren't the first element, then our start must be greater than the preivous element's end
+        // If we aren't the first element, then our start must be greater than the previous element's end
         if pos > 0 {
             assert!(self.v[pos - 1].range.end() <= range.start);
         }
