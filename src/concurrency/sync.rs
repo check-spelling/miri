@@ -373,7 +373,7 @@ pub trait EvalContextExt<'mir, 'tcx: 'mir>: crate::MiriInterpCxExt<'mir, 'tcx> {
                 .expect("invariant violation: lock_count == 0 iff the thread is unlocked");
             if mutex.lock_count == 0 {
                 mutex.owner = None;
-                // The mutex is completely unlocked. Try transfering ownership
+                // The mutex is completely unlocked. Try transferring ownership
                 // to another thread.
                 if let Some(data_race) = &this.machine.data_race {
                     data_race.validate_lock_release(
