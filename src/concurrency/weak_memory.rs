@@ -336,7 +336,7 @@ impl<'mir, 'tcx: 'mir> StoreBuffer {
         let mut found_sc = false;
         // FIXME: we want an inclusive take_while (stops after a false predicate, but
         // includes the element that gave the false), but such function doesn't yet
-        // exist in the standard libary https://github.com/rust-lang/rust/issues/62208
+        // exist in the standard library https://github.com/rust-lang/rust/issues/62208
         // so we have to hack around it with keep_searching
         let mut keep_searching = true;
         let candidates = self
