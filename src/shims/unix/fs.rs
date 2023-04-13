@@ -1053,7 +1053,7 @@ pub trait EvalContextExt<'mir, 'tcx: 'mir>: crate::MiriInterpCxExt<'mir, 'tcx> {
             return Ok(-1);
         }
 
-        // the `_mask_op` paramter specifies the file information that the caller requested.
+        // the `_mask_op` parameter specifies the file information that the caller requested.
         // However `statx` is allowed to return information that was not requested or to not
         // return information that was requested. This `mask` represents the information we can
         // actually provide for any target.
