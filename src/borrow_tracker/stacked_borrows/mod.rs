@@ -825,7 +825,7 @@ trait EvalContextPrivExt<'mir: 'ecx, 'tcx: 'mir, 'ecx>: crate::MiriInterpCxExt<'
         Ok(Some(alloc_id))
     }
 
-    /// Retags an indidual pointer, returning the retagged version.
+    /// Retags an individual pointer, returning the retagged version.
     /// `kind` indicates what kind of reference is being created.
     fn sb_retag_reference(
         &mut self,
