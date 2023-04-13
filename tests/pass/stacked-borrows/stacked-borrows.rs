@@ -104,7 +104,7 @@ fn partially_invalidate_mut() {
     assert_eq!(*data, (1, 1));
 }
 
-// Make sure that we can handle the situation where a loaction is frozen when being dropped.
+// Make sure that we can handle the situation where a location is frozen when being dropped.
 fn drop_after_sharing() {
     let x = String::from("hello!");
     let _len = x.len();
