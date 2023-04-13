@@ -456,7 +456,7 @@ pub fn eval_entry<'tcx>(
             return None;
         }
         // Check for memory leaks.
-        info!("Additonal static roots: {:?}", ecx.machine.static_roots);
+        info!("Additional static roots: {:?}", ecx.machine.static_roots);
         let leaks = ecx.leak_report(&ecx.machine.static_roots);
         if leaks != 0 {
             tcx.sess.err("the evaluated program leaked memory");
