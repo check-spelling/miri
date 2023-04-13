@@ -25,9 +25,9 @@ pub struct RangeObjectMap<T> {
 
 #[derive(Clone, Debug, PartialEq)]
 pub enum AccessType {
-    /// The access perfectly overlaps (same offset and range) with the exsiting allocation
+    /// The access perfectly overlaps (same offset and range) with the existing allocation
     PerfectlyOverlapping(Position),
-    /// The access does not touch any exising allocation
+    /// The access does not touch any existing allocation
     Empty(Position),
     /// The access overlaps with one or more existing allocations
     ImperfectlyOverlapping(Range<Position>),
