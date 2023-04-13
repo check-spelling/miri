@@ -33,7 +33,7 @@
 //! information about reads, whereas in the other two models it is the other way round: reads points to the write it got its value from.
 //! Additionally, writes in our implementation do not have globally unique timestamps attached. In the other two models this timestamp is
 //! used to make sure a value in a thread's view is not overwritten by a write that occurred earlier than the one in the existing view.
-//! In our implementation, this is detected using read information attached to store elements, as there is no data strucutre representing reads.
+//! In our implementation, this is detected using read information attached to store elements, as there is no data structure representing reads.
 //!
 //! The C++ memory model is built around the notion of an 'atomic object', so it would be natural
 //! to attach store buffers to atomic objects. However, Rust follows LLVM in that it only has
