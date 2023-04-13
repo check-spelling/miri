@@ -32,7 +32,7 @@
 //! and shared across all threads. This is more memory efficient but does require store elements (representing writes to a location) to record
 //! information about reads, whereas in the other two models it is the other way round: reads points to the write it got its value from.
 //! Additionally, writes in our implementation do not have globally unique timestamps attached. In the other two models this timestamp is
-//! used to make sure a value in a thread's view is not overwritten by a write that occured earlier than the one in the existing view.
+//! used to make sure a value in a thread's view is not overwritten by a write that occurred earlier than the one in the existing view.
 //! In our implementation, this is detected using read information attached to store elements, as there is no data strucutre representing reads.
 //!
 //! The C++ memory model is built around the notion of an 'atomic object', so it would be natural
