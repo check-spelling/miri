@@ -79,7 +79,7 @@ impl<'tcx> TlsData<'tcx> {
                 trace!("TLS key {} removed", key);
                 Ok(())
             }
-            None => throw_ub_format!("removing a non-existig TLS key: {}", key),
+            None => throw_ub_format!("removing a nonexistent TLS key: {}", key),
         }
     }
 
