@@ -143,7 +143,7 @@ struct Condvar {
     waiters: VecDeque<CondvarWaiter>,
     /// Tracks the happens-before relationship
     /// between a cond-var signal and a cond-var
-    /// wait during a non-suprious signal event.
+    /// wait during a non-spurious signal event.
     /// Contains the clock of the last thread to
     /// perform a futex-signal.
     data_race: VClock,
