@@ -61,7 +61,7 @@
 //
 // 2. In the operational semantics, each store element keeps the timestamp of a thread when it loads from the store.
 // If the same thread loads from the same store element multiple times, then the timestamps at all loads are saved in a list of load elements.
-// This is not necessary as later loads by the same thread will always have greater timetstamp values, so we only need to record the timestamp of the first
+// This is not necessary as later loads by the same thread will always have greater timestamp values, so we only need to record the timestamp of the first
 // load by each thread. This optimisation is done in tsan11
 // (https://github.com/ChrisLidbury/tsan11/blob/ecbd6b81e9b9454e01cba78eb9d88684168132c7/lib/tsan/rtl/tsan_relaxed.h#L35-L37)
 // and here.
